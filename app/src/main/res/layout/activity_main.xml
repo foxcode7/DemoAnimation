@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/frame_animation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="帧动画"/>
+
+    <Button
+        android:id="@+id/simple_transformation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简单的四种变换"/>
+
+    <Button
+        android:id="@+id/button_fly_out_animation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="属性动画"/>
+
+    <Button
+        android:id="@+id/height_change_animation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="任意属性的动画"/>
+
+    <Button
+        android:id="@+id/arc_progress_animation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="含动画的view绘制"/>
+
+    <Button
+        android:id="@+id/svg_animation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SVG矢量特效"/>
+
+    <Button
+        android:id="@+id/loading_animation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绚丽的loading特效"/>
+
+</LinearLayout>

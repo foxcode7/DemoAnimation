@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moushishe.demoanimation" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SimpleTransformationActivity"
+            android:screenOrientation="portrait"
+            android:label="简单变换"/>
+
+        <activity android:name=".FrameAnimationActivity"
+            android:screenOrientation="portrait"
+            android:label="帧动画"/>
+
+        <activity android:name=".ButtonFlyOutAnimationActivity"
+            android:screenOrientation="portrait"
+            android:label="属性动画"/>
+        
+        <activity android:name=".HeightChangeAnimationActivity"
+            android:screenOrientation="portrait"
+            android:label="任意属性的动画"/>
+
+        <activity android:name=".SVGAnimationActivity"
+            android:screenOrientation="portrait"
+            android:label="SVG矢量特效"/>
+
+        <activity android:name=".ArcProgressAnimationActivity"
+            android:screenOrientation="portrait"
+            android:label="含动画的View绘制"/>
+
+        <activity android:name=".LoadingAnimationActivity"
+            android:screenOrientation="portrait"
+            android:label="绚丽的loading特效"/>
+    </application>
+
+</manifest>

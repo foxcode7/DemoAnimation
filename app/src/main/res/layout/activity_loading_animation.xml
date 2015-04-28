@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 展板 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#fed255"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:id="@+id/leaf_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.moushishe.demoanimation.tools.LeafLoadingView
+                android:id="@+id/leaf_loading"
+                android:layout_width="302dp"
+                android:layout_height="61dp"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/fan_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:src="@mipmap/fengshan" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <!-- 控制台 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:background="#ccc">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/reset_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="开始"/>
+
+            <Button
+                android:id="@+id/fengshan_switch_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="风扇开关"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

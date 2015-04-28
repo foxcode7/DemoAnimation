@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 展板 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/doreamon_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/doraemon"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <!-- 控制台 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:background="#ccc">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/alpha_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="透明度(alpha)"/>
+
+            <Button
+                android:id="@+id/scale_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="缩放(scale)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/translate_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="平移(translate)"/>
+
+            <Button
+                android:id="@+id/rotate_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="旋转(rotate)"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

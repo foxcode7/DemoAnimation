@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 展板 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:src="@mipmap/shield"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/item1"
+            android:src="@mipmap/hero1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/item2"
+            android:src="@mipmap/hero2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/item3"
+            android:src="@mipmap/hero3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/item4"
+            android:src="@mipmap/hero4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/item5"
+            android:src="@mipmap/hero5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/item6"
+            android:src="@mipmap/hero6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/item7"
+            android:src="@mipmap/hero7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/item8"
+            android:src="@mipmap/hero8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <!-- 控制台 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:background="#ccc">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/start_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="启动"/>
+
+            <Button
+                android:id="@+id/stop_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="停止"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
